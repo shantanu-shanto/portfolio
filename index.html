@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+     <!-- AOS Library for Animations -->
+     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.css" />
+ 
+     <!-- Custom CSS -->
+     <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+
+    <!-- Navbar -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg custom-navbar" data-aos="fade-down">
+    <div class="container">
+        <!-- Logo and Brand Name -->
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/logo.jpeg" alt="Shantanu Logo" class="logo-img me-2">
+            <span>Shantanu</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <!-- Home Section -->
+    <!-- Hero Section -->
+<section id="hero-carousel">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="1000">
+        <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active" style="background-image: url('images/Web\ Development.jpeg'); height: 100vh; background-size: cover; background-position: center;">
+                <div class="carousel-container">
+                    <div class="container text-center">
+                        <h2 class="animate__animated animate__fadeInDown" style="color: #fff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Building the Future</h2>
+                        <a href="services.html" class="btn btn-primary animate__animated animate__fadeInUp">Our Services</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item" style="background-image: url('images/Quality\ That\ Stands.jpeg'); height: 100vh; background-size: cover; background-position: center;">
+                <div class="carousel-container">
+                    <div class="container text-center">
+                        <h2 class="animate__animated animate__fadeInDown" style="color: #fff; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);">Quality That Stands</h2>
+                        <a href="projects.html" class="btn btn-success animate__animated animate__fadeInUp">View Projects</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-item" style="background-image: url('images/Built\ on\ Trust.jpeg'); height: 100vh; background-size: cover; background-position: center;">
+                <div class="carousel-container">
+                    <div class="container text-center">
+                        <h2 class="animate__animated animate__fadeInDown" style="color: #000000; text-shadow: 2px 2px 5px rgba(80, 13, 124, 0.514);">Built on Trust</h2>
+                        <a href="contact.html" class="btn btn-warning animate__animated animate__fadeInUp">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </a>
+    </div>
+</section>
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container" data-aos="fade-right">
+            <h2>About Me</h2>
+            <p class="lead">I'm a passionate web developer with a focus on SEO and performance-driven design. My expertise includes HTML, CSS, JavaScript, PHP, Laravel, and WordPress, allowing me to create engaging websites that look cool and user-friendly.</p>
+            <div class="row mt-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card shadow-sm">
+                        <img src="images/Web Development.jpeg" class="card-img-top" alt="Web Development">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Development</h5>
+                            <p class="card-text">Expertise in creating responsive, user-friendly websites using modern web technologies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card shadow-sm">
+                        <img src="images/SEO Optimization.jpeg" class="card-img-top" alt="SEO">
+                        <div class="card-body">
+                            <h5 class="card-title">SEO Optimization</h5>
+                            <p class="card-text">Skilled in SEO strategies to improve visibility and rank high on search engines.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card shadow-sm">
+                        <img src="images/wordpress.jpeg" class="card-img-top" alt="WordPress Development">
+                        <div class="card-body">
+                            <h5 class="card-title">WordPress Development</h5>
+                            <p class="card-text">Proficient in WordPress to build customizable websites for clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <!-- Projects Section -->
+  <section id="projects" class="py-5" data-aos="fade-up">
+    <div class="container">
+      <h2 class="text-center mb-2">My Projects</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/agency-T.PNG" class="card-img-top" alt="Project 1" data-toggle="modal" data-target="#projectModal" data-image="images/agency-T.PNG">
+            <div class="card-body text-center">
+              <h5 class="card-title">Agency Website</h5>
+              <p class="card-text">An Event management agency showcasing their projects.</p>
+              <a href="https://shantanu-shanto.github.io/agency/" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/store-T.PNG" class="card-img-top" alt="Project 2" data-toggle="modal" data-target="#projectModal" data-image="images/store-T.PNG">
+            <div class="card-body text-center">
+              <h5 class="card-title">E-commerce Platform</h5>
+              <p class="card-text">A fully functional e-commerce site with a user-friendly design.</p>
+              <a href="https://shantanu-shanto.github.io/fashion-store/" class="btn btn-danger mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/portfolio-T.PNG" class="card-img-top" alt="Project 3" data-toggle="modal" data-target="#projectModal" data-image="images/portfolio-T.PNG">
+            <div class="card-body text-center">
+              <h5 class="card-title">Portfolio Webpage</h5>
+              <p class="card-text">A blog with SEO-friendly structure to boost search engine rankings.</p>
+              <a href="portfolio-project-3.html" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/cons-T.PNG" class="card-img-top" alt="Project 4" data-toggle="modal" data-target="#projectModal" data-image="images/cons-T.PNG">
+            <div class="card-body text-center">
+              <h5 class="card-title">Construction Company Site</h5>
+              <p class="card-text">A blog with SEO-friendly structure to boost search engine rankings.</p>
+              <a href="https://shantanu-shanto.github.io/construction-company/" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/yoga-T.PNG" class="card-img-top" alt="Project 5" data-toggle="modal" data-target="#projectModal" data-image="images/yoga-T.PNG">
+            <div class="card-body text-center">
+              <h5 class="card-title">Yoga Class Appointment</h5>
+              <p class="card-text">A blog with SEO-friendly structure to boost search engine rankings.</p>
+              <a href="https://shantanu-shanto.github.io/yoga-studio/" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/pos system.PNG" class="card-img-top" alt="Project 6" data-toggle="modal" data-target="#projectModal" data-image="images/project-3.jpg">
+            <div class="card-body text-center">
+              <h5 class="card-title">POS System on Cloud</h5>
+              <p class="card-text">A blog with SEO-friendly structure to boost search engine rankings.</p>
+              <a href="https://github.com/shantanu-shanto/pos-system" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card custom-card">
+            <img src="images/D-c.jpg" class="card-img-top" alt="Project 7" data-toggle="modal" data-target="#projectModal" data-image="images/D-c.jpg">
+            <div class="card-body text-center">
+              <h5 class="card-title">Website Design Cloning</h5>
+              <p class="card-text">A blog with SEO-friendly structure to boost search engine rankings.</p>
+              <a href="portfolio-project-3.html" class="btn btn-primary mt-2">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal -->
+<!-- Full-Screen Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img id="modalImage" src="" alt="Full-Screen View" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container" data-aos="fade-left">
+            <h2>Services</h2>
+            <div class="row mt-4">
+                <!-- Service 1 -->
+                <div class="col-md-4" data-aos="flip-left">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Custom Web Development</h5>
+                            <p class="card-text">Creating fast, responsive websites tailored to your business needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="100">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">SEO Optimization</h5>
+                            <p class="card-text">Improving your website’s search engine ranking to attract more traffic.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="col-md-4" data-aos="flip-left" data-aos-delay="200">
+                    <div class="card shadow-sm text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">WordPress Development</h5>
+                            <p class="card-text">Customized WordPress solutions for an easy-to-manage website.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <!-- Embedded Google Form Section -->
+<section id="contact" class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center mb-5">Fill Out Our Contact Form</h2>
+        <div class="d-flex justify-content-center">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdl1sSwPzRglCQ-lWYAkO8oZiw6MH-BhyVKd3NUiO2dpmGNFA/viewform?embedded=true" width="640" height="551" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+<footer class="bg-dark text-light py-4">
+    <div class="container">
+        <div class="row">
+            <!-- About Section -->
+            <div class="col-md-4">
+                <h5>About Me</h5>
+                <p>I’m Shantanu, a web developer and SEO expert dedicated to creating user-friendly websites.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="col-md-4">
+                <h5>Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="text-light">Home</a></li>
+                    <li><a href="#about" class="text-light">About Me</a></li>
+                    <li><a href="#projects" class="text-light">Projects</a></li>
+                    <li><a href="#services" class="text-light">Services</a></li>
+                    <li><a href="#contact" class="text-light">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="col-md-4">
+                <h5>Contact</h5>
+                <p>Email: <a href="mailto:shantanu@example.com" class="text-light">shantohowladerr@gmail.com</a></p>
+                <p>Phone: <a href="tel:+1234567890" class="text-light">+8801601798031</a></p>
+                <h5>Follow Me</h5>
+                <a href="#" class="text-light me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light me-2"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="text-light"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <hr class="bg-light">
+        
+        <div class="text-center py-2">
+            <p class="mb-0">&copy; 2024 Shantanu. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS Library for Animations -->
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.3.1/dist/aos.js"></script>
+
+    
+
+    <!-- Include Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

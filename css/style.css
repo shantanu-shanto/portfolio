@@ -1,0 +1,200 @@
+/* Color Theme */
+:root {
+    --primary-color: #0A0A0A; /* Dark Black */
+    --secondary-color: #ECA427; /* Golden Yellow */
+    --accent-color: #FFFFFF; /* Pure White */
+    --background-color: #1C1C1C; /* Deep Gray for Contrast */
+    --text-color: #18a0d6; /* Muted Light Gray */
+    --light-text-color: #FFFFFF; /* Bright White */
+    --link-hover-color: #4789E0; /* Bright Blue for Hover Effect */
+    --border-color: #333333; /* Dark Gray for Borders */
+    --button-bg-color: #ECA427; /* Gold for Call-to-Action Buttons */
+    --button-hover-color: #D19A23; /* Slightly Darker Gold for Hover */
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--accent-color);
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color);
+}
+
+/* Logo Image */
+.logo-img {
+    height: 40px;
+    width: auto;
+}
+
+/* Hero Section */
+#hero-carousel .carousel-item {
+    background-size: cover;
+    background-position: center;
+    color: var(--accent-color);
+}
+
+.carousel-container {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+#hero-carousel .btn {
+    padding: 10px 20px;
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+#hero-carousel .btn:hover {
+    background-color: var(--primary-color);
+}
+.modal-body img {
+    max-height: 90vh;
+    object-fit: contain;
+}
+  
+/* Card Styles */
+.custom-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.card-img-top {
+    cursor: pointer;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Card Button */
+.custom-card .btn {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+}
+
+.custom-card .btn:hover {
+    background-color: var(--primary-color);
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-color);
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: var(--primary-color);
+}
+
+/* Section Padding */
+section {
+    padding: 3rem 0;
+}
+
+/* Heading Styles */
+h2 {
+    font-weight: bold;
+    color: var(--accent-color);
+    text-shadow: 2px 2px 4px var(--border-color);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--accent-color);
+    color: var(--light-text-color);
+    padding: 3rem 0;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+footer p, footer ul {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer ul li a {
+    color: var(--light-text-color);
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: var(--secondary-color);
+}
+
+/* Button Hover and Transition */
+.btn {
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* AOS Animations */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px;
+    }
+
+    #hero-carousel .carousel-container {
+        padding: 0 20px;
+    }
+}
+
